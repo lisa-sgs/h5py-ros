@@ -83,7 +83,7 @@ jobs:
         run: |
           cp licenses/* h5py-*/licenses/
           cd h5py-*/
-          uvx --from toml-cli toml set --toml-path pyproject.toml project.name h5py-ros3
+          uvx --from toml-cli toml set --toml-path pyproject.toml project.name h5py-s3
           uvx cibuildwheel --output-dir ../wheelhouse
 
       - name: Upload wheels artifact
